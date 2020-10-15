@@ -1,0 +1,29 @@
+
+<title>Ubicacion</title>
+<div class="container w-75 mt-5">
+    <form id="formulario">
+        <div id="id_">
+            <p class="h4">ID de Ubicacion</p>
+            <input type="number" class="form-control" name="idubi" id="id" required>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <p class="h4">Nombre</p>
+                <input type="text" class="form-control" name="nombre" id="nombre" required>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <p class="h4">Depende</p>
+                <select name="depende" id="depende" class="form-control" required> </select>
+            </div>
+        </div>
+       
+        <div class="col-sm-12 mb-5" align="center">
+            <input type="submit" class="btn btn-primary btn-rounded mt-5" id="registrar" value="Registrar servicio">
+        </div>
+    </form>
+    <div class="col-4 mx-auto my-5">
+        <input type="text" id="buscador" class="form-control" placeholder="Buscar">
+    </div>
+    <div id="registros"></div>
+</div>
+<script src="js/cubi.js"></script>

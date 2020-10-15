@@ -1,0 +1,45 @@
+<h1>Producto</h1>
+<div class="container with mt-5">
+    <form id="formulario">
+        <div class="backgro">
+        <div class="row">
+            <div class="cont8">
+            <div class="col-sm-12 col-lg-4">
+                <p class="h6">Descripción de producto</p>
+                <input type="text" class="form-control" name="nombre" id="desc" required>
+            </div>
+            </div>
+            <br>
+            <div class="col-4 col-lg-3">
+                <br>
+                <p class="h6">Precio</p>
+                <input type="number" name="precio" id="precio" class="form-control" required>
+            </div>
+            <div class="col-3 col-lg-2">
+                <input type="hidden" name="idprod" id="id">
+                <br>
+                <p class="h6">Cantidad</p>
+                <input type="number" name="cantidad" id="cantidad" class="form-control" required>
+            </div>
+            
+            <div class="col-3 col-lg-2">
+                <br>
+                <span class="h6">Unidades</span>
+                <input type="checkbox" class="alcenter" id="check">
+                <input type="number" name="paq" id="paq" class="form-control" disabled>
+            </div>
+            <div class="col-12" align="center">
+                <br>
+            <br>
+                <input type="submit" class="btn btn-outline-primary" id="registrar" value="Registrar">
+            </div>
+        </div>
+        </div>
+    </form>
+    <div class="col-4 mx-auto my-5">
+        <input type="text" id="buscador" class="form-control" placeholder="Buscar">
+    </div>
+    <div id="er"></div>
+    <div id="registros"></div>
+</div>
+<script src="js/cprod.js"></script>

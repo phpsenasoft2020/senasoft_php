@@ -1,0 +1,97 @@
+.cabe1{
+width: 100%;
+/*height: 170px;*/
+background: rgba(255,255,255,1);
+/*
+background: #ffff00;
+background: -moz-linear-gradient(top,  #ffff00 0%, #ffff00 50%, #0000ff 50%, #0000ff 75%, #ff0000 75%, #ff0000 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(50%,#ffff00), color-stop(50%,#0000ff), color-stop(75%,#0000ff), color-stop(75%,#ff0000), color-stop(100%,#ff0000));
+background: -webkit-linear-gradient(top,  #ffff00 0%,#ffff00 49%,#0000ff 50%,#0000ff 75%,#ff0000 76%,#ff0000 100%);
+background: -o-linear-gradient(top,  #ffff00 0%,#ffff00 50%,#0000ff 50%,#0000ff 75%,#ff0000 75%,#ff0000 100%);
+background: -ms-linear-gradient(top,  #ffff00 0%,#ffff00 50%,#0000ff 50%,#0000ff 75%,#ff0000 75%,#ff0000 100%);
+background: linear-gradient(to bottom,  #ffff00 0%,#ffff00 50%,#0000ff 50%,#0000ff 75%,#ff0000 75%,#ff0000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ff0000',GradientType=0 );
+*/
+text-align:center;
+}
+
+.tablaLogin{
+width: 360px;
+height: 80%;
+text-align: center; 
+margin: 0 auto;
+border-radius: 15px;
+background: rgba(255,255,255,0.85);
+}
+
+body{
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/fondogris.jpg");*/
+    background-color: #09013e;
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+}
+
+.controles{
+	color: black;
+    background-size: 20px;
+    border-radius: 10px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 5px 5px;
+    width: 200px;
+}
+
+.titul{
+	font-size: 18px;
+}
+
+.boton{
+	width: 60%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #eaea11;
+    font-weight: bold;
+    color: #070754;
+}
+
+.boton:hover{
+    background-color: #ff0;
+    color: #000;
+}
+
+.boton1{
+    width: 50%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #c3c3c3;
+    font-weight: bold;
+    color: #070754;
+}
+
+.boton1:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+div.tablaLogin{
+text-align: center;
+}
+
+div.tablaLogin table{
+margin: 0 auto;
+text-align: left;
+}
+
+.conte{
+	width: 100%;
+    background-image: url(../image/ini.jpg);
+    background-size: 100% 100%;
+    padding: 100px 0px;
+}

@@ -1,0 +1,195 @@
+.full-width{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.ShowBox{
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+.formated-section{
+	padding: 60px 0;
+}
+/*=========== Barra de navegacion ===*/
+.NavBarP,
+.NavBarP-Logo,
+.NavBarP-Nav,
+.NavBarP-Nav > ul,
+.NavBarP-Nav > ul > li,
+.NavBarP-Nav > ul > li > a{
+	height: 50px;
+	line-height: 50px;
+}
+.NavBarP{
+	background-color: #141414;
+	color: #fff;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+.NavBarP-Logo,
+.NavBarP-Nav{
+	position: absolute;
+	top: 0;
+	background-color: #141414;
+}
+.NavBarP-Logo{
+	left: 0;
+	width: 30%;
+}
+.NavBarP-Nav{
+	right: 0;
+	width: 70%;
+}
+.NavBarP-Nav > ul{
+	text-align: right;
+	padding-right: 10px;
+}
+.NavBarP-Nav > ul > li{
+	display: inline-block;
+	position: relative;
+}
+.NavBarP-Nav > ul > li > a{
+	color: #fff;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 0 7px;
+	transition: all .3s ease-in-out;
+}
+.NavBarP-Nav > ul > li > a:hover{
+	color: #FAE76F;
+}
+/*====== Login ==*/
+.Login{
+	right: 0;
+	z-index: 77;
+	background: rgba(228, 228, 228, 0.8);
+  	backdrop-filter: blur(2px);
+	color: #141414;
+	text-transform: none;
+	line-height: normal;
+	padding: 7px;
+	text-align: left;
+	font-size: 14px;
+	transition: all .3s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+.Login a{
+	text-decoration: none;
+	line-height: auto;
+	text-align: center;
+	display: block;
+}
+/*=======================================================================================================
+=                                        Media queries                                                  =
+========================================================================================================*/
+/* col-xs */
+@media (max-width: 767px) {
+	.NoScroll{
+		overflow-y: hidden;
+	}
+    .NavBarP-Logo{
+    	width: 100%;
+    	z-index: 99;
+    	position: fixed;
+    	border-bottom: 1px solid rgba(75, 75, 75, .8);
+    }
+    .NavBarP-Nav{
+    	width: 100%;
+    	padding-top: 50px;
+    	height: 100%;
+    	z-index: 97;
+    	position: fixed;
+    	opacity: 0;
+    	pointer-events: none;
+    	transition: all .3s ease-in-out;
+    }
+    .NavBarP-Nav > ul{
+    	padding-right: 0;
+    	text-align: center;
+    	height: 100%;
+    }
+    .NavBarP-Nav > ul > li{
+		display: block;
+    }
+    .btn-menuMobile{
+    	position: absolute;
+    	z-index: 100;
+    	top: 0;
+    	right: 0;
+    	color: #fff;
+    	height: 50px;
+    	width: 50px;
+    	cursor: pointer;
+    	line-height: 50px;
+    	font-size: 25px;
+    	transition: all .3s ease-in-out;
+    }
+    .btn-menuMobile:hover{
+		color: #FAE76F;
+	}
+    .Login{
+    	position: fixed;
+    	height: 100%;
+    	top: 0;
+    	padding-top: 50px;
+    	z-index: 100;
+    }
+}
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* col-lg */
+@media (min-width: 1200px) {
+    
+}
+
+/*col-sm col-md col-lg*/
+@media (min-width: 768px) {
+	.Login{
+		border: 2px solid #3E3E3E;
+		position: absolute;
+		border-radius: 10px;
+		top: 62px;
+		width: 250px;
+		margin-right: 10px;
+	}
+    .Login::after,
+	.Login::before {
+		bottom: 100%;
+		right: 30px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.Login::after {
+		border-color: rgba(136, 183, 213, 0);
+		border-bottom-color: #3E3E3E;
+		border-width: 15px;
+		margin-right: 0px;
+	}
+	.Login::before {
+		border-color: rgba(62, 62, 62, 0);
+		border-bottom-color: #3E3E3E;
+		border-width: 15px;
+		margin-right: -2px;
+	}
+}
