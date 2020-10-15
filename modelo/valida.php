@@ -14,7 +14,7 @@
 			//Incriptamos el campo ($pass en $pp)
 			$pp = sha1(md5($pass));
 			//Llamamos nuestro procedimiento almacenado
-			$sql = "SELECT * FROM usuario WHERE emausu=:user AND pasusu=:pass;";
+			$sql = "SELECT a. idusu, a.nomusu, a.tipusu,b.pefnom,b.pefbus,b.pefdes,b.pefedi,b.pefeli FROM usuario AS a INNER JOIN perfil AS b ON a.tipusu = b.pefid WHERE a.emausu=:user AND a.pasusu = :pass;";
 			$modelo=new conexion();
 			$conexion=$modelo->get_conexion();
 			$result=$conexion->prepare($sql);
